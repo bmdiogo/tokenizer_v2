@@ -134,6 +134,24 @@ and stream = offline, channel independence, every loss term, the detector, match
 Victor–Purpura distance on planted spike trains, the split rules, an exact resume of a training
 run, and the demo app's counters against the evaluation detector.
 
+### Docker
+
+The image every cluster run used: Ubuntu 24.04, Python 3.12 and the fully pinned lock
+`cluster/container/requirements-linux.txt` (torch 2.8.0 + CUDA 12.6). It also includes isosplit6,
+compiled at build time, so offline sorting works without a local C++ compiler. Code and data
+stay outside the image: the working tree is mounted at `/workspace`.
+
+```bash
+docker build --platform linux/amd64 -t tokenizer-v2:0.2.0 cluster/container    # ~10 min, 10.8 GB unpacked
+bash cluster/container/run_local.sh python -m pytest -q                         # the tests inside the image (CPU)
+bash cluster/container/run_local.sh                                             # a shell in /workspace
+DATA_HOST=/path/to/data bash cluster/container/run_local.sh python -m scripts.evaluate ...   # data at /data
+```
+
+`run_local.sh` passes the local `.env` to the container. On a machine with an NVIDIA GPU and the
+NVIDIA Container Toolkit, add `--gpus all` to a plain `docker run` of the same image. On a cluster
+the image runs as a Singularity `.sif`; see [`cluster/README.md`](cluster/README.md).
+
 ## Data
 
 The recordings are intracortical Utah-array data from human participants (P2, P3, P4: Blackrock
@@ -204,6 +222,12 @@ runs offline.
 python -m app.precompute <recording> --electrodes 96    # ŷ and the tokens of the whole array
 python -m app.export <recording>                        # the bundle the page plays
 python -m app                                           # http://localhost:8000
+```
+
+Once exported, the bundle plays on any PC with Docker and no Python, served by nginx:
+
+```bash
+SHOW_DIR=/path/to/show docker compose -f app/compose.yaml up -d                   # http://localhost:8000
 ```
 
 ## License
