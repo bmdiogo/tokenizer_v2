@@ -1,0 +1,88 @@
+{
+ "git": "9b10c4c",
+ "split_hash": "8159c355670a",
+ "quick": false,
+ "model": "s8-ref-s1 step 200000",
+ "seconds": 120,
+ "sampling": "10000 spike and 10000 non-spike tokens per map, artifacts left out",
+ "groups": {
+  "p4_unseen": {
+   "recordings": [
+    "P4-test-01",
+    "P4-test-44"
+   ],
+   "n_recordings_in_group": 20,
+   "tokens": 2880000,
+   "spike_rate": 0.05876887139832459,
+   "n_spike_tokens": 163432,
+   "n_good_spikes_in_span": 196832,
+   "features": [
+    "spike",
+    "crossing",
+    "position",
+    "trough",
+    "spike_rms",
+    "mua",
+    "voltage",
+    "delta",
+    "delta_signed",
+    "theta",
+    "theta_signed",
+    "alpha",
+    "alpha_signed",
+    "beta",
+    "beta_signed",
+    "gamma",
+    "gamma_signed",
+    "high_gamma",
+    "high_gamma_signed",
+    "artifact"
+   ],
+   "participation_ratio": 27.697507604127754,
+   "knn_agreement": {
+    "seed0": {
+     "map": 0.9098533333333333,
+     "tokens_32d": 0.90463,
+     "pc12": 0.69584,
+     "n": 20000
+    },
+    "seed1": {
+     "map": 0.90869,
+     "tokens_32d": 0.9030166666666667,
+     "pc12": 0.6913266666666666,
+     "n": 20000
+    }
+   },
+   "lags": [
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "n_trig": [
+    20000,
+    2574,
+    386,
+    104
+   ],
+   "units_in_unit_map": [
+    88,
+    87,
+    86
+   ]
+  }
+ }
+}

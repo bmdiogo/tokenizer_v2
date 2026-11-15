@@ -1,0 +1,185 @@
+{
+ "source": "pca",
+ "group": "p4_unseen",
+ "n_recordings": 20,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7947725295889684,
+  "recall": 0.7580599723024527,
+  "f1": 0.7759822659985659,
+  "precision_good": 0.6598556955463739,
+  "f1_ci95": [
+   0.7513370685068653,
+   0.7684488262237887
+  ],
+  "tp": 1087105,
+  "tp_any": 1309379,
+  "n_det": 1647489,
+  "n_ref": 1434062,
+  "false_alarms_per_min": 190.59188275084554,
+  "victor_purpura_median": {
+   "0.5ms": 0.36850094876660405,
+   "1ms": 0.32711034284068236,
+   "5ms": 0.2883814303638625
+  }
+ },
+ "units_x": {
+  "n_units": 1086,
+  "pct_recall_ge_0.95": 34.16206261510129,
+  "recall_median": 0.7960915459186723,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5715811965811965,
+    "n_units": 203
+   },
+   "9-12": {
+    "recall_median": 0.7385298470646275,
+    "n_units": 491
+   },
+   "12-18": {
+    "recall_median": 0.9889349930843707,
+    "n_units": 187
+   },
+   "18-inf": {
+    "recall_median": 0.9785522788203753,
+    "n_units": 205
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.6237159781060209,
+  "recall": 0.009632080063484006,
+  "f1": 0.018971187044781544,
+  "precision_good": 0.5178450925995352,
+  "f1_ci95": [
+   0.019864328148369706,
+   0.022431990797849292
+  ],
+  "tp": 13813,
+  "tp_any": 16637,
+  "n_det": 26674,
+  "n_ref": 1434062,
+  "false_alarms_per_min": 5.657835400225479,
+  "victor_purpura_median": {
+   "0.5ms": 0.9870251813913784,
+   "1ms": 0.9852464034282217,
+   "5ms": 0.9822496493688637
+  }
+ },
+ "units_x_hat": {
+  "n_units": 1086,
+  "pct_recall_ge_0.95": 0.0,
+  "recall_median": 0.008416855300932096,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.006369426751592357,
+    "n_units": 203
+   },
+   "9-12": {
+    "recall_median": 0.007722007722007722,
+    "n_units": 491
+   },
+   "12-18": {
+    "recall_median": 0.010391686650679457,
+    "n_units": 187
+   },
+   "18-inf": {
+    "recall_median": 0.02564102564102564,
+    "n_units": 205
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.010995258047750677,
+  "kept": 11953,
+  "found_on_x": 1087105,
+  "ci95": [
+   0.011221730452329041,
+   0.012803496972755976
+  ],
+  "extra_per_min": 1.04847801578354,
+  "units": {
+   "n_units": 1086,
+   "pct_retention_ge_0.95": 0.0,
+   "retention_median": 0.009614269588332013,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.00774233508826262,
+     "n_units": 203
+    },
+    "9-12": {
+     "retention_median": 0.008450704225352112,
+     "n_units": 491
+    },
+    "12-18": {
+     "retention_median": 0.010458567980691875,
+     "n_units": 187
+    },
+    "18-inf": {
+     "retention_median": 0.02586206896551724,
+     "n_units": 205
+    }
+   }
+  }
+ },
+ "crossings_x_hat": {
+  "retention": 0.009438596528698096,
+  "kept": 17677,
+  "x_crossings": 1872842,
+  "ci95": [
+   0.008848590967519502,
+   0.010119001106463459
+  ],
+  "new_per_min": 639.95
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.1818002249292438,
+   "amp_ratio_median": 0.04290916120238802,
+   "n_units": 1086
+  },
+  "low_amplitude": {
+   "r_median": 0.1817631907669225,
+   "amp_ratio_median": 0.047006924942621285,
+   "n_units": 543
+  },
+  "high_amplitude": {
+   "r_median": 0.18209342879014667,
+   "amp_ratio_median": 0.03643176828601614,
+   "n_units": 543
+  },
+  "amp_split_sigma": 10.041165335009905
+ },
+ "lfp_r_median": {
+  "delta": 0.9999997378974775,
+  "theta": 0.999999937459198,
+  "alpha": 0.9999999821480315,
+  "beta": 0.9999999579071202,
+  "gamma": 0.9999992576929964,
+  "high_gamma": 0.9999876767103684
+ },
+ "mua_r_median": 0.30499630128070404,
+ "snr_db": {
+  "lfp": 53.210941093474815,
+  "spike": 0.042256767536060905
+ },
+ "artifacts": {
+  "pct_flagged": 3.765957985742716,
+  "l1_inside": 0.15313028991222383,
+  "l1_outside": 0.10319579876959324
+ }
+}

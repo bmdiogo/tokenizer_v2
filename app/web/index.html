@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural tokenizer · two arrays</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{ "imports": { "three": "./vendor/three/build/three.module.js", "three/addons/": "./vendor/three/examples/jsm/" } }</script>
+
+<body class="intro">
+<canvas id="scene"></canvas>
+
+<section id="intro">
+  <h1>Reading spikes back from <em>125 tokens a second.</em></h1>
+  <p>96 electrodes in human cortex, sampled at 30 kHz. A causal codec keeps one token per electrode every 8 ms.
+     Left: the curated spikes of the recording. Right: what a threshold finds on the model's output, as it would online.</p>
+  <button id="start" disabled>loading…</button>
+</section>
+
+<header class="hud">
+  <div><b>Neural tokenizer</b><span id="rec"></span></div>
+  <div>30 kHz input → 125 Hz tokens → ŷ<span>causal · 240× fewer time steps</span></div>
+</header>
+
+<div class="label hud" id="labL">
+  <h2>Curated spikes</h2><p>the ground truth: NIX Good units</p>
+  <output id="nRef">0</output><p>spikes so far</p>
+</div>
+<div class="label hud" id="labR">
+  <h2>Found by the model</h2><p>threshold at −Kσ on ŷ, decoded from the tokens</p>
+  <output id="recY">–</output><p id="statY"></p><p id="statX"></p>
+</div>
+
+<section id="drawer">
+  <header><h2 id="elName"></h2><span id="elStat"></span><button id="close">close ×</button></header>
+  <canvas id="traces"></canvas>
+</section>
+
+<p id="note" class="hud"><i class="nix"></i>curated spike <i class="yhat"></i>detection that matches one <i class="fa"></i>false alarm
+  <i class="arc"></i>thread: a curated spike the model also found<span>click an electrode · grid in channel order, not the array's geometry</span></p>
+
+<footer class="hud">
+  <button id="play">pause</button><span id="time"></span>
+  <div id="timeline"><canvas id="hist"></canvas><div id="played"></div></div>
+  <button id="speed">1×</button>
+</footer>
+
+<script type="module" src="main.js"></script>
+</html>

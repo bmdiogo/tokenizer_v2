@@ -1,0 +1,195 @@
+{
+ "source": "wavelet",
+ "group": "p4_unseen",
+ "n_recordings": 20,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7947725295889684,
+  "recall": 0.7580599723024527,
+  "f1": 0.7759822659985659,
+  "precision_good": 0.6598556955463739,
+  "f1_ci95": [
+   0.7513370685068653,
+   0.7684488262237887
+  ],
+  "tp": 1087105,
+  "tp_any": 1309379,
+  "n_det": 1647489,
+  "n_ref": 1434062,
+  "false_alarms_per_min": 190.59188275084554,
+  "victor_purpura_median": {
+   "0.5ms": 0.36850094876660405,
+   "1ms": 0.32711034284068236,
+   "5ms": 0.2883814303638625
+  }
+ },
+ "units_x": {
+  "n_units": 1086,
+  "pct_recall_ge_0.95": 34.16206261510129,
+  "recall_median": 0.7960915459186723,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5715811965811965,
+    "n_units": 203
+   },
+   "9-12": {
+    "recall_median": 0.7385298470646275,
+    "n_units": 491
+   },
+   "12-18": {
+    "recall_median": 0.9889349930843707,
+    "n_units": 187
+   },
+   "18-inf": {
+    "recall_median": 0.9785522788203753,
+    "n_units": 205
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.8662328345570797,
+  "recall": 0.6513693271281158,
+  "f1": 0.7435907945138632,
+  "precision_good": 0.7323692329404017,
+  "f1_ci95": [
+   0.7198729429667932,
+   0.7403316231025296
+  ],
+  "tp": 934104,
+  "tp_any": 1104841,
+  "n_det": 1275455,
+  "n_ref": 1434062,
+  "false_alarms_per_min": 96.17474633596392,
+  "victor_purpura_median": {
+   "0.5ms": 0.40571842200506586,
+   "1ms": 0.369307282415634,
+   "5ms": 0.33036385299238946
+  }
+ },
+ "units_x_hat": {
+  "n_units": 1086,
+  "pct_recall_ge_0.95": 33.24125230202578,
+  "recall_median": 0.6600943596805933,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.41936842105263156,
+    "n_units": 203
+   },
+   "9-12": {
+    "recall_median": 0.6054613935969868,
+    "n_units": 491
+   },
+   "12-18": {
+    "recall_median": 0.9884726224783862,
+    "n_units": 187
+   },
+   "18-inf": {
+    "recall_median": 0.9850746268656716,
+    "n_units": 205
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.8330621237139006,
+  "kept": 905626,
+  "found_on_x": 1087105,
+  "ci95": [
+   0.8264203743189956,
+   0.8413421226762758
+  ],
+  "extra_per_min": 16.052987598647125,
+  "units": {
+   "n_units": 1086,
+   "pct_retention_ge_0.95": 36.46408839779006,
+   "retention_median": 0.8312102337803622,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.7040572792362768,
+     "n_units": 203
+    },
+    "9-12": {
+     "retention_median": 0.800561797752809,
+     "n_units": 491
+    },
+    "12-18": {
+     "retention_median": 0.9960552268244576,
+     "n_units": 187
+    },
+    "18-inf": {
+     "retention_median": 0.9991816693944353,
+     "n_units": 205
+    }
+   }
+  }
+ },
+ "crossings_x_hat": {
+  "retention": 0.7154522378289252,
+  "kept": 1339929,
+  "x_crossings": 1872842,
+  "ci95": [
+   0.7024925409240983,
+   0.7260639559912981
+  ],
+  "new_per_min": 1928.65
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.9376084130530129,
+   "amp_ratio_median": 0.9352162556747148,
+   "n_units": 1086
+  },
+  "low_amplitude": {
+   "r_median": 0.927724670682708,
+   "amp_ratio_median": 0.9239980184455154,
+   "n_units": 543
+  },
+  "high_amplitude": {
+   "r_median": 0.9703924538583785,
+   "amp_ratio_median": 0.9630169360350527,
+   "n_units": 543
+  },
+  "amp_split_sigma": 10.041165335009905
+ },
+ "sorting_x": {
+  "acc_median": 0.5670892514395394,
+  "n_units": 1086,
+  "n_acc_ge_0.8": 231
+ },
+ "sorting_x_hat": {
+  "acc_median": 0.5046779345387915,
+  "n_units": 1086,
+  "n_acc_ge_0.8": 209
+ },
+ "lfp_r_median": {
+  "delta": 0.9999976558077097,
+  "theta": 0.9999971420809222,
+  "alpha": 0.9999977810291178,
+  "beta": 0.9999883117877792,
+  "gamma": 0.9999443277000601,
+  "high_gamma": 0.9997994345835224
+ },
+ "mua_r_median": 0.9126495556723224,
+ "snr_db": {
+  "lfp": 43.67045540885207,
+  "spike": 3.493115014405655
+ },
+ "artifacts": {
+  "pct_flagged": 3.765957985742716,
+  "l1_inside": 0.08642196282744408,
+  "l1_outside": 0.07747730072587729
+ }
+}

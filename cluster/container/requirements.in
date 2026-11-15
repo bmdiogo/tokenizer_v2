@@ -1,0 +1,25 @@
+# Container dependency spec — mirrors [project.dependencies] in pyproject.toml, with torch pinned to
+# the cu126 build (cluster driver 535.86.10 = CUDA 12.2; see cluster/README.md).
+#
+# Regenerate the lock after editing:
+#   uv pip compile cluster/container/requirements.in \
+#       --python-platform x86_64-unknown-linux-gnu --python-version 3.12 \
+#       --index-strategy unsafe-best-match -o cluster/container/requirements-linux.txt
+
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+torch==2.8.0
+numpy>=1.26
+scipy>=1.12
+pandas>=2.2
+scikit-learn>=1.4
+matplotlib>=3.8
+neo>=0.13
+nixio>=1.5
+quantities>=0.15
+python-dotenv>=1.0
+wandb>=0.21
+tqdm>=4.66
+isosplit6>=0.1          # ElcheSort's clusterer (built from source in the Dockerfile)
+pytest>=8
+ipykernel>=6.0

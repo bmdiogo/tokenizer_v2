@@ -1,0 +1,23 @@
+{
+ "git": "9919bea",
+ "split_hash": "14ea01191d7d",
+ "quick": false,
+ "edges_sigma": [
+  5.0,
+  5.25,
+  5.5,
+  6.0,
+  7.0,
+  9.0,
+  12.0,
+  Infinity
+ ],
+ "sources": [
+  "codec_s1",
+  "codec_s2",
+  "codec_s3",
+  "codec_s4",
+  "codec_s5",
+  "pca_F240"
+ ]
+}

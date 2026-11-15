@@ -1,0 +1,16 @@
+# The two-array show on any PC with Docker (no Python): nginx serves the page and the bundle of app.export.
+#   SHOW_DIR=C:/path/to/show docker compose -f app/compose.yaml up -d      -> http://localhost:8000
+services:
+  show:
+    image: nginx:1.27-alpine
+    ports: ["8000:80"]
+    volumes:
+      - ./web:/web:ro
+      - ${SHOW_DIR:?the folder python -m app.export wrote}:/show:ro
+    configs:
+      - source: site
+        target: /etc/nginx/conf.d/default.conf
+configs:
+  site:
+    content: |
+      server { listen 80; root /web; location /show/ { alias /show/; } }

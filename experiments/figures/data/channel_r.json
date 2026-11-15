@@ -1,0 +1,76 @@
+{
+ "git": "9919bea",
+ "split_hash": "14ea01191d7d",
+ "quick": false,
+ "sources": [
+  "codec_125",
+  "pca_F240"
+ ],
+ "bands": [
+  "delta",
+  "theta",
+  "alpha",
+  "beta",
+  "gamma",
+  "high_gamma"
+ ],
+ "groups": {
+  "p2_final": [
+   "P2-test-01",
+   "P2-test-02",
+   "P2-test-03",
+   "P2-test-04",
+   "P2-test-05",
+   "P2-test-07",
+   "P2-test-08",
+   "P2-test-09",
+   "P2-test-10",
+   "P2-test-11",
+   "P2-test-12",
+   "P2-test-13",
+   "P2-test-14"
+  ],
+  "p3_final": [
+   "P3-test-01",
+   "P3-test-02",
+   "P3-test-03",
+   "P3-test-06",
+   "P3-test-07",
+   "P3-test-08",
+   "P3-test-09",
+   "P3-test-12",
+   "P3-test-13",
+   "P3-test-14",
+   "P3-test-15",
+   "P3-test-19",
+   "P3-test-20",
+   "P3-test-21",
+   "P3-test-22",
+   "P3-test-26",
+   "P3-test-27",
+   "P3-test-28"
+  ],
+  "p4_unseen": [
+   "P4-test-01",
+   "P4-test-02",
+   "P4-test-15",
+   "P4-test-16",
+   "P4-test-29",
+   "P4-test-30",
+   "P4-test-44",
+   "P4-test-45",
+   "P4-test-63",
+   "P4-test-77",
+   "P4-test-78",
+   "P4-test-90",
+   "P4-test-91",
+   "P4-test-105",
+   "P4-test-106",
+   "P4-test-122",
+   "P4-test-123",
+   "P4-test-137",
+   "P4-test-169",
+   "P4-test-170"
+  ]
+ }
+}

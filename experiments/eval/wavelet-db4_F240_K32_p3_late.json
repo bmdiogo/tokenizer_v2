@@ -1,0 +1,195 @@
+{
+ "source": "wavelet-db4",
+ "group": "p3_late",
+ "n_recordings": 11,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7770010137482487,
+  "recall": 0.7574782071736875,
+  "f1": 0.7671154184968961,
+  "precision_good": 0.6881414235759116,
+  "f1_ci95": [
+   0.743606982422855,
+   0.772470134586653
+  ],
+  "tp": 241656,
+  "tp_any": 272861,
+  "n_det": 351172,
+  "n_ref": 319027,
+  "false_alarms_per_min": 119.01367781155015,
+  "victor_purpura_median": {
+   "0.5ms": 0.3404795486600852,
+   "1ms": 0.29968423942888894,
+   "5ms": 0.2551699204627617
+  }
+ },
+ "units_x": {
+  "n_units": 379,
+  "pct_recall_ge_0.95": 27.96833773087071,
+  "recall_median": 0.7608142493638677,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.6001387690807486,
+    "n_units": 40
+   },
+   "9-12": {
+    "recall_median": 0.7249992082945398,
+    "n_units": 234
+   },
+   "12-18": {
+    "recall_median": 0.9950248756218906,
+    "n_units": 65
+   },
+   "18-inf": {
+    "recall_median": 0.9806757895780653,
+    "n_units": 40
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.8273140436793303,
+  "recall": 0.6932767446015541,
+  "f1": 0.7543878226614722,
+  "precision_good": 0.7353274619908705,
+  "f1_ci95": [
+   0.732176899442665,
+   0.7615626118727992
+  ],
+  "tp": 221174,
+  "tp_any": 248842,
+  "n_det": 300783,
+  "n_ref": 319027,
+  "false_alarms_per_min": 78.93768996960486,
+  "victor_purpura_median": {
+   "0.5ms": 0.3578866768759542,
+   "1ms": 0.3201166180758056,
+   "5ms": 0.281065054691996
+  }
+ },
+ "units_x_hat": {
+  "n_units": 379,
+  "pct_recall_ge_0.95": 26.385224274406333,
+  "recall_median": 0.6886446886446886,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5140405040425883,
+    "n_units": 40
+   },
+   "9-12": {
+    "recall_median": 0.6528330843236417,
+    "n_units": 234
+   },
+   "12-18": {
+    "recall_median": 0.9944029850746269,
+    "n_units": 65
+   },
+   "18-inf": {
+    "recall_median": 0.9870337291163181,
+    "n_units": 40
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.8889247525408018,
+  "kept": 214814,
+  "found_on_x": 241656,
+  "ci95": [
+   0.8846022598816763,
+   0.8994411299503703
+  ],
+  "extra_per_min": 9.66565349544073,
+  "units": {
+   "n_units": 379,
+   "pct_retention_ge_0.95": 31.398416886543533,
+   "retention_median": 0.8825978351373855,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.8069917825801861,
+     "n_units": 40
+    },
+    "9-12": {
+     "retention_median": 0.8706906193518369,
+     "n_units": 234
+    },
+    "12-18": {
+     "retention_median": 0.999271137026239,
+     "n_units": 65
+    },
+    "18-inf": {
+     "retention_median": 1.0,
+     "n_units": 40
+    }
+   }
+  }
+ },
+ "crossings_x_hat": {
+  "retention": 0.8003831408380362,
+  "kept": 331734,
+  "x_crossings": 414469,
+  "ci95": [
+   0.7940962446367547,
+   0.8058032687479869
+  ],
+  "new_per_min": 783.5909090909091
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.9675485648553326,
+   "amp_ratio_median": 0.9539485305258308,
+   "n_units": 379
+  },
+  "low_amplitude": {
+   "r_median": 0.9641276701769478,
+   "amp_ratio_median": 0.9458814480598066,
+   "n_units": 189
+  },
+  "high_amplitude": {
+   "r_median": 0.9763517048704351,
+   "amp_ratio_median": 0.9682958129548094,
+   "n_units": 190
+  },
+  "amp_split_sigma": 9.966180357215759
+ },
+ "sorting_x": {
+  "acc_median": 0.5991586538461539,
+  "n_units": 379,
+  "n_acc_ge_0.8": 76
+ },
+ "sorting_x_hat": {
+  "acc_median": 0.562200956937799,
+  "n_units": 379,
+  "n_acc_ge_0.8": 74
+ },
+ "lfp_r_median": {
+  "delta": 0.9999998195231974,
+  "theta": 0.999999279776703,
+  "alpha": 0.9999987883234422,
+  "beta": 0.9999975341383937,
+  "gamma": 0.9999529113662975,
+  "high_gamma": 0.9997257837401744
+ },
+ "mua_r_median": 0.932097810465975,
+ "snr_db": {
+  "lfp": 49.84987570555659,
+  "spike": 5.457336402568577
+ },
+ "artifacts": {
+  "pct_flagged": 0.02285353521901098,
+  "l1_inside": 0.05641615639130274,
+  "l1_outside": 0.0550043179907582
+ }
+}

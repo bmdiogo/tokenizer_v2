@@ -1,0 +1,185 @@
+{
+ "source": "pca",
+ "group": "p2_final",
+ "n_recordings": 13,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7456341458063667,
+  "recall": 0.7454998163190334,
+  "f1": 0.7455669750121333,
+  "precision_good": 0.6010399069787851,
+  "f1_ci95": [
+   0.7396492557113339,
+   0.7728465001913407
+  ],
+  "tp": 109584,
+  "tp_any": 135947,
+  "n_det": 182324,
+  "n_ref": 146994,
+  "false_alarms_per_min": 177.0114503816794,
+  "victor_purpura_median": {
+   "0.5ms": 0.3823768115942008,
+   "1ms": 0.3404411764705884,
+   "5ms": 0.286194225721783
+  }
+ },
+ "units_x": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 27.32919254658385,
+  "recall_median": 0.7814540705267741,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.6055472644714699,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.7089733225545675,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.984930032292788,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.9703703703703703,
+    "n_units": 33
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.9086505277160749,
+  "recall": 0.41074465624447254,
+  "f1": 0.565749145048051,
+  "precision_good": 0.7577149454714306,
+  "f1_ci95": [
+   0.5195403309258891,
+   0.6059788084585488
+  ],
+  "tp": 60377,
+  "tp_any": 72404,
+  "n_det": 79683,
+  "n_ref": 146994,
+  "false_alarms_per_min": 27.782442748091604,
+  "victor_purpura_median": {
+   "0.5ms": 0.556343518169245,
+   "1ms": 0.5173228346456694,
+   "5ms": 0.4695238095238096
+  }
+ },
+ "units_x_hat": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 22.981366459627328,
+  "recall_median": 0.3938091143594153,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.0687165585911201,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.30359212050984935,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.9323741007194245,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.976,
+    "n_units": 33
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.531382318586655,
+  "kept": 58231,
+  "found_on_x": 109584,
+  "ci95": [
+   0.49572415586276003,
+   0.5904653785773015
+  ],
+  "extra_per_min": 8.19083969465649,
+  "units": {
+   "n_units": 161,
+   "pct_retention_ge_0.95": 26.70807453416149,
+   "retention_median": 0.5405669599217986,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.11221440767542076,
+     "n_units": 12
+    },
+    "9-12": {
+     "retention_median": 0.4263565891472868,
+     "n_units": 91
+    },
+    "12-18": {
+     "retention_median": 0.9617486338797814,
+     "n_units": 25
+    },
+    "18-inf": {
+     "retention_median": 0.9904632152588556,
+     "n_units": 33
+    }
+   }
+  }
+ },
+ "crossings_x_hat": {
+  "retention": 0.37733298849669966,
+  "kept": 167783,
+  "x_crossings": 444655,
+  "ci95": [
+   0.3636966588642196,
+   0.3952902012783706
+  ],
+  "new_per_min": 525.3846153846154
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.8987370167092775,
+   "amp_ratio_median": 0.7792208734767909,
+   "n_units": 161
+  },
+  "low_amplitude": {
+   "r_median": 0.8905050458218301,
+   "amp_ratio_median": 0.7752238419611566,
+   "n_units": 79
+  },
+  "high_amplitude": {
+   "r_median": 0.9034685598258512,
+   "amp_ratio_median": 0.7843637663221161,
+   "n_units": 82
+  },
+  "amp_split_sigma": 10.834449576832132
+ },
+ "lfp_r_median": {
+  "delta": 0.9999999988421595,
+  "theta": 0.9999999990656112,
+  "alpha": 0.9999999991125637,
+  "beta": 0.9999999967393773,
+  "gamma": 0.9999999818346164,
+  "high_gamma": 0.9999995035906031
+ },
+ "mua_r_median": 0.9946007617544848,
+ "snr_db": {
+  "lfp": 60.38242239342936,
+  "spike": 6.759395605322639
+ },
+ "artifacts": {
+  "pct_flagged": 0.2717414543999789,
+  "l1_inside": 0.5827580339585742,
+  "l1_outside": 0.06856966849703056
+ }
+}

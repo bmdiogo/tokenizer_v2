@@ -1,0 +1,276 @@
+{
+ "source": "/workspace/runs/s8-ref-s5/step_200000.pt",
+ "group": "p2_final",
+ "n_recordings": 13,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7456341458063667,
+  "recall": 0.7454998163190334,
+  "f1": 0.7455669750121333,
+  "precision_good": 0.6010399069787851,
+  "f1_ci95": [
+   0.7396492557113339,
+   0.7728465001913407
+  ],
+  "tp": 109584,
+  "tp_any": 135947,
+  "n_det": 182324,
+  "n_ref": 146994,
+  "false_alarms_per_min": 177.0114503816794,
+  "victor_purpura_median": {
+   "0.5ms": 0.3823768115942008,
+   "1ms": 0.3404411764705884,
+   "5ms": 0.286194225721783
+  }
+ },
+ "units_x": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 27.32919254658385,
+  "recall_median": 0.7814540705267741,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.6055472644714699,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.7089733225545675,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.984930032292788,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.9703703703703703,
+    "n_units": 33
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.8751999892442759,
+  "recall": 0.7149407458807843,
+  "f1": 0.7869946593827069,
+  "precision_good": 0.7064628456956937,
+  "f1_ci95": [
+   0.7806382467562692,
+   0.8152211539943881
+  ],
+  "tp": 105092,
+  "tp_any": 130193,
+  "n_det": 148758,
+  "n_ref": 146994,
+  "false_alarms_per_min": 70.8587786259542,
+  "victor_purpura_median": {
+   "0.5ms": 0.35138329304324123,
+   "1ms": 0.30776794493608695,
+   "5ms": 0.2591030789825938
+  }
+ },
+ "units_x_hat": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 32.91925465838509,
+  "recall_median": 0.7619363395225465,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5753420334933621,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.6816608996539792,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.9913294797687862,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.991304347826087,
+    "n_units": 33
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.9220232880712512,
+  "kept": 101039,
+  "found_on_x": 109584,
+  "ci95": [
+   0.9199042402286244,
+   0.939553174379766
+  ],
+  "extra_per_min": 15.469465648854962,
+  "units": {
+   "n_units": 161,
+   "pct_retention_ge_0.95": 45.962732919254655,
+   "retention_median": 0.944954128440367,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.892382619624742,
+     "n_units": 12
+    },
+    "9-12": {
+     "retention_median": 0.9180704441041347,
+     "n_units": 91
+    },
+    "12-18": {
+     "retention_median": 0.99880810488677,
+     "n_units": 25
+    },
+    "18-inf": {
+     "retention_median": 1.0,
+     "n_units": 33
+    }
+   }
+  }
+ },
+ "detect_y_hat": {
+  "precision": 0.9190806205956727,
+  "recall": 0.6940079186905588,
+  "f1": 0.7908421801703074,
+  "precision_good": 0.743424936052994,
+  "f1_ci95": [
+   0.7845785023338102,
+   0.8222959595985473
+  ],
+  "tp": 102015,
+  "tp_any": 126119,
+  "n_det": 137223,
+  "n_ref": 146994,
+  "false_alarms_per_min": 42.38167938931298,
+  "victor_purpura_median": {
+   "0.5ms": 0.34952023362536194,
+   "1ms": 0.3053824362606228,
+   "5ms": 0.26052143314139115
+  }
+ },
+ "units_y_hat": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 32.298136645962735,
+  "recall_median": 0.7445365486058779,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5359598190432088,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.6491628614916286,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.9922928709055877,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.9938271604938271,
+    "n_units": 33
+   }
+  }
+ },
+ "retention_y_hat": {
+  "retention": 0.896088845086874,
+  "kept": 98197,
+  "found_on_x": 109584,
+  "ci95": [
+   0.8900793733020761,
+   0.916377928062997
+  ],
+  "extra_per_min": 14.572519083969466,
+  "units": {
+   "n_units": 161,
+   "pct_retention_ge_0.95": 40.37267080745342,
+   "retention_median": 0.9166666666666666,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.8508799012040753,
+     "n_units": 12
+    },
+    "9-12": {
+     "retention_median": 0.8869565217391304,
+     "n_units": 91
+    },
+    "12-18": {
+     "retention_median": 0.9956709956709957,
+     "n_units": 25
+    },
+    "18-inf": {
+     "retention_median": 1.0,
+     "n_units": 33
+    }
+   }
+  }
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.9839108747158074,
+   "amp_ratio_median": 0.9787876311898056,
+   "n_units": 161
+  },
+  "low_amplitude": {
+   "r_median": 0.9801715412044663,
+   "amp_ratio_median": 0.9739535166480497,
+   "n_units": 79
+  },
+  "high_amplitude": {
+   "r_median": 0.99342272029632,
+   "amp_ratio_median": 0.9900630884453592,
+   "n_units": 82
+  },
+  "amp_split_sigma": 10.834449576832132
+ },
+ "sorting_x": {
+  "acc_median": 0.5522755227552275,
+  "n_units": 161,
+  "n_acc_ge_0.8": 30
+ },
+ "sorting_x_hat": {
+  "acc_median": 0.610586011342155,
+  "n_units": 161,
+  "n_acc_ge_0.8": 35
+ },
+ "sorting_y_hat_online": {
+  "acc_median": 0.6098981077147017,
+  "n_units": 161,
+  "n_acc_ge_0.8": 35,
+  "pct_unsorted": 1.3300771880859972
+ },
+ "lfp_r_median": {
+  "delta": 0.9996286987964486,
+  "theta": 0.9989815874946508,
+  "alpha": 0.9980881660712532,
+  "beta": 0.9942469638711549,
+  "gamma": 0.9972477295448572,
+  "high_gamma": 0.990101957142223
+ },
+ "mua_r_median": 0.9967787774026077,
+ "snr_db": {
+  "lfp": 18.74321807840296,
+  "spike": 12.587160380321503
+ },
+ "artifacts": {
+  "pct_flagged": 0.2717414543999789,
+  "l1_inside": 0.7872700057923794,
+  "l1_outside": 0.06827220635918471
+ },
+ "probe_f1": 0.027403993162765063
+}

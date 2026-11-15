@@ -1,0 +1,139 @@
+{
+ "split_hash": "14ea01191d7d",
+ "git": "f2ec85c",
+ "question": "which loss term collapses the output (and S3: does the raw input train)",
+ "band": "raw",
+ "steps": 150,
+ "input_std": 1.1439529657363892,
+ "table": {
+  "125 Hz": {
+   "stft 0.05": {
+    "std": 1.0557355880737305,
+    "corr": 0.9293736815452576,
+    "escaped": true
+   },
+   "stft 0.1": {
+    "std": 1.0078636407852173,
+    "corr": 0.8842669129371643,
+    "escaped": true
+   },
+   "stft 0.2": {
+    "std": 1.006871223449707,
+    "corr": 0.8532519936561584,
+    "escaped": true
+   },
+   "stft 1.0": {
+    "std": 0.5827632546424866,
+    "corr": 0.2296997755765915,
+    "escaped": false
+   },
+   "stft only": {
+    "std": 0.5205954909324646,
+    "corr": -0.06010051444172859,
+    "escaped": false
+   },
+   "time only (default)": {
+    "std": 1.062761664390564,
+    "corr": 0.9515910148620605,
+    "escaped": true
+   }
+  },
+  "62.5 Hz": {
+   "stft 0.05": {
+    "std": 1.0195940732955933,
+    "corr": 0.8720841407775879,
+    "escaped": true
+   },
+   "stft 0.1": {
+    "std": 0.9916141033172607,
+    "corr": 0.8581975102424622,
+    "escaped": true
+   },
+   "stft 0.2": {
+    "std": 0.8232053518295288,
+    "corr": 0.7429524064064026,
+    "escaped": false
+   },
+   "stft 1.0": {
+    "std": 0.4396120309829712,
+    "corr": 0.04645727202296257,
+    "escaped": false
+   },
+   "stft only": {
+    "std": 0.48853322863578796,
+    "corr": 0.06401791423559189,
+    "escaped": false
+   },
+   "time only (default)": {
+    "std": 0.9888577461242676,
+    "corr": 0.8984780311584473,
+    "escaped": true
+   }
+  },
+  "31.3 Hz": {
+   "stft 0.05": {
+    "std": 0.8831623196601868,
+    "corr": 0.7616071105003357,
+    "escaped": false
+   },
+   "stft 0.1": {
+    "std": 0.8304480910301208,
+    "corr": 0.7368797659873962,
+    "escaped": false
+   },
+   "stft 0.2": {
+    "std": 0.34882089495658875,
+    "corr": 0.09764140844345093,
+    "escaped": false
+   },
+   "stft 1.0": {
+    "std": 0.37993401288986206,
+    "corr": 0.06142916902899742,
+    "escaped": false
+   },
+   "stft only": {
+    "std": 0.4142870008945465,
+    "corr": 0.06393175572156906,
+    "escaped": false
+   },
+   "time only (default)": {
+    "std": 0.974699854850769,
+    "corr": 0.8524196147918701,
+    "escaped": true
+   }
+  },
+  "15.6 Hz": {
+   "stft 0.05": {
+    "std": 0.8688086867332458,
+    "corr": 0.710313081741333,
+    "escaped": false
+   },
+   "stft 0.1": {
+    "std": 0.45550602674484253,
+    "corr": 0.372438907623291,
+    "escaped": false
+   },
+   "stft 0.2": {
+    "std": 0.3065877854824066,
+    "corr": 0.06339222937822342,
+    "escaped": false
+   },
+   "stft 1.0": {
+    "std": 0.4588908851146698,
+    "corr": 0.028977641835808754,
+    "escaped": false
+   },
+   "stft only": {
+    "std": 0.5390282273292542,
+    "corr": -0.03159899637103081,
+    "escaped": false
+   },
+   "time only (default)": {
+    "std": 0.9573149085044861,
+    "corr": 0.814516544342041,
+    "escaped": false
+   }
+  }
+ },
+ "s3_input_passes": true
+}

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# local settings: paths, accounts
+.env
+cluster/cluster.env
+
+# data and run outputs (never in git)
+info/splits.csv
+/data/
+runs/
+wandb/
+logs/
+*.npy
+*.npz
+!experiments/figures/assets/*.npz
+*.pt
+*.tar
+*.tar.sha256
+*.sif

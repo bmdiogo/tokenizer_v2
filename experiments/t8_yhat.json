@@ -1,0 +1,70 @@
+{
+ "split_hash": "14ea01191d7d",
+ "git": "c0bc2b6",
+ "question": "online sorter settings (on runs/s5-c8/step_015000.pt)",
+ "sessions": [
+  "P2-train-43",
+  "P2-train-59",
+  "P2-train-85",
+  "P3-train-01",
+  "P3-train-03",
+  "P3-train-04",
+  "P3-train-11",
+  "P3-train-39",
+  "P3-train-78",
+  "P3-train-92"
+ ],
+ "default": {
+  "cal_seconds": 60,
+  "min_spikes": 50,
+  "tau_pct": 95,
+  "alpha": 0.01
+ },
+ "results": {
+  "default": {
+   "acc_median": 0.5357142857142857,
+   "n_units": 363,
+   "pct_unsorted": 6.7250363832683915
+  },
+  "cal_seconds=30": {
+   "acc_median": 0.505722460658083,
+   "n_units": 363,
+   "pct_unsorted": 8.118476026408912
+  },
+  "cal_seconds=90": {
+   "acc_median": 0.5424,
+   "n_units": 363,
+   "pct_unsorted": 5.8937972807196894
+  },
+  "min_spikes=20": {
+   "acc_median": 0.5359531772575251,
+   "n_units": 363,
+   "pct_unsorted": 6.028146826700885
+  },
+  "min_spikes=100": {
+   "acc_median": 0.49943757030371205,
+   "n_units": 363,
+   "pct_unsorted": 7.8939955870616405
+  },
+  "tau_pct=90": {
+   "acc_median": 0.5163398692810458,
+   "n_units": 363,
+   "pct_unsorted": 12.458204883443136
+  },
+  "tau_pct=99": {
+   "acc_median": 0.5508940852819807,
+   "n_units": 363,
+   "pct_unsorted": 2.20073131673526
+  },
+  "alpha=0": {
+   "acc_median": 0.5356550580431177,
+   "n_units": 363,
+   "pct_unsorted": 6.509605704479185
+  },
+  "alpha=0.001": {
+   "acc_median": 0.5357142857142857,
+   "n_units": 363,
+   "pct_unsorted": 6.69347813613341
+  }
+ }
+}

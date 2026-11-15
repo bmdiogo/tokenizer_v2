@@ -1,0 +1,14 @@
+{
+ "git": "9919bea",
+ "split_hash": "14ea01191d7d",
+ "quick": false,
+ "nperseg": 8192,
+ "seconds": 30,
+ "sources": [
+  "x",
+  "codec_125",
+  "codec_62.5",
+  "codec_31.3",
+  "pca_F240"
+ ]
+}

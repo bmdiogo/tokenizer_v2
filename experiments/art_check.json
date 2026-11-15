@@ -1,0 +1,39 @@
+{
+ "split_hash": "14ea01191d7d",
+ "git": "c0bc2b6",
+ "question": "does the hse rule flag real spikes?",
+ "recordings": {
+  "P2-val-15": {
+   "pct_time_flagged": 1.7842791815517456,
+   "pct_good_spikes_inside": 1.8418008719636978,
+   "pct_bad_spikes_inside": 2.0227983907018325,
+   "n_spans": 49,
+   "spike_enrichment": 1.0322380550121797,
+   "figure": "art_check_P2-val-15.png"
+  },
+  "P3-train-45": {
+   "pct_time_flagged": 1.8155534159091775,
+   "pct_good_spikes_inside": 1.8253093225529828,
+   "pct_bad_spikes_inside": 3.1633924862009617,
+   "n_spans": 304,
+   "spike_enrichment": 1.0053735167240563,
+   "figure": "art_check_P3-train-45.png"
+  },
+  "P3-train-82": {
+   "pct_time_flagged": 5.880655320362994,
+   "pct_good_spikes_inside": 5.4135860665905815,
+   "pct_bad_spikes_inside": 5.446419291133978,
+   "n_spans": 2385,
+   "spike_enrichment": 0.9205753052461538,
+   "figure": "art_check_P3-train-82.png"
+  },
+  "P3-train-101": {
+   "pct_time_flagged": 40.19398615100305,
+   "pct_good_spikes_inside": 93.9871228648965,
+   "pct_bad_spikes_inside": 95.61633381808757,
+   "n_spans": 40491,
+   "spike_enrichment": 2.338337942193649,
+   "figure": "art_check_P3-train-101.png"
+  }
+ }
+}

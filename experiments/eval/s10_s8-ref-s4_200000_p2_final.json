@@ -1,0 +1,276 @@
+{
+ "source": "/workspace/runs/s8-ref-s4/step_200000.pt",
+ "group": "p2_final",
+ "n_recordings": 13,
+ "split_hash": "14ea01191d7d",
+ "k_threshold": 5.0,
+ "eval_seconds": 120,
+ "detect_x": {
+  "precision": 0.7456341458063667,
+  "recall": 0.7454998163190334,
+  "f1": 0.7455669750121333,
+  "precision_good": 0.6010399069787851,
+  "f1_ci95": [
+   0.7396492557113339,
+   0.7728465001913407
+  ],
+  "tp": 109584,
+  "tp_any": 135947,
+  "n_det": 182324,
+  "n_ref": 146994,
+  "false_alarms_per_min": 177.0114503816794,
+  "victor_purpura_median": {
+   "0.5ms": 0.3823768115942008,
+   "1ms": 0.3404411764705884,
+   "5ms": 0.286194225721783
+  }
+ },
+ "units_x": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 27.32919254658385,
+  "recall_median": 0.7814540705267741,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.6055472644714699,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.7089733225545675,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.984930032292788,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.9703703703703703,
+    "n_units": 33
+   }
+  }
+ },
+ "detect_x_hat": {
+  "precision": 0.8737478434152278,
+  "recall": 0.7169340245180076,
+  "f1": 0.787611363933522,
+  "precision_good": 0.7047184068689732,
+  "f1_ci95": [
+   0.7819205108083417,
+   0.8160004552424269
+  ],
+  "tp": 105385,
+  "tp_any": 130662,
+  "n_det": 149542,
+  "n_ref": 146994,
+  "false_alarms_per_min": 72.06106870229007,
+  "victor_purpura_median": {
+   "0.5ms": 0.34547527433376435,
+   "1ms": 0.31079447322970577,
+   "5ms": 0.2656775469831852
+  }
+ },
+ "units_x_hat": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 32.298136645962735,
+  "recall_median": 0.760557248585111,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5857977932274913,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.6752767527675276,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.9903660886319846,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.991304347826087,
+    "n_units": 33
+   }
+  }
+ },
+ "retention_x_hat": {
+  "retention": 0.9244871514089648,
+  "kept": 101309,
+  "found_on_x": 109584,
+  "ci95": [
+   0.9232896874534766,
+   0.9421173543619751
+  ],
+  "extra_per_min": 15.557251908396946,
+  "units": {
+   "n_units": 161,
+   "pct_retention_ge_0.95": 45.3416149068323,
+   "retention_median": 0.9434290687554395,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.9110395624751908,
+     "n_units": 12
+    },
+    "9-12": {
+     "retention_median": 0.9235159817351598,
+     "n_units": 91
+    },
+    "12-18": {
+     "retention_median": 0.9984662576687117,
+     "n_units": 25
+    },
+    "18-inf": {
+     "retention_median": 1.0,
+     "n_units": 33
+    }
+   }
+  }
+ },
+ "detect_y_hat": {
+  "precision": 0.9187076829294842,
+  "recall": 0.6965590432262542,
+  "f1": 0.7923572426319766,
+  "precision_good": 0.7430387738662835,
+  "f1_ci95": [
+   0.7870660311048426,
+   0.8240236445934601
+  ],
+  "tp": 102390,
+  "tp_any": 126597,
+  "n_det": 137799,
+  "n_ref": 146994,
+  "false_alarms_per_min": 42.7557251908397,
+  "victor_purpura_median": {
+   "0.5ms": 0.34560669456066634,
+   "1ms": 0.301509203524387,
+   "5ms": 0.259450303611374
+  }
+ },
+ "units_y_hat": {
+  "n_units": 161,
+  "pct_recall_ge_0.95": 32.298136645962735,
+  "recall_median": 0.7435317759356945,
+  "recall_by_snr": {
+   "0-6": {
+    "recall_median": null,
+    "n_units": 0
+   },
+   "6-9": {
+    "recall_median": 0.5322284757596267,
+    "n_units": 12
+   },
+   "9-12": {
+    "recall_median": 0.6518105849582173,
+    "n_units": 91
+   },
+   "12-18": {
+    "recall_median": 0.9924650161463939,
+    "n_units": 25
+   },
+   "18-inf": {
+    "recall_median": 0.9919678714859438,
+    "n_units": 33
+   }
+  }
+ },
+ "retention_y_hat": {
+  "retention": 0.8985618338443568,
+  "kept": 98468,
+  "found_on_x": 109584,
+  "ci95": [
+   0.8937217520185238,
+   0.91957688855889
+  ],
+  "extra_per_min": 14.969465648854962,
+  "units": {
+   "n_units": 161,
+   "pct_retention_ge_0.95": 41.61490683229814,
+   "retention_median": 0.9231568016614745,
+   "retention_by_snr": {
+    "0-6": {
+     "retention_median": null,
+     "n_units": 0
+    },
+    "6-9": {
+     "retention_median": 0.8462994367391437,
+     "n_units": 12
+    },
+    "9-12": {
+     "retention_median": 0.8942807625649913,
+     "n_units": 91
+    },
+    "12-18": {
+     "retention_median": 0.995398773006135,
+     "n_units": 25
+    },
+    "18-inf": {
+     "retention_median": 0.9971014492753624,
+     "n_units": 33
+    }
+   }
+  }
+ },
+ "waveform": {
+  "all": {
+   "r_median": 0.984256538814498,
+   "amp_ratio_median": 0.9813693592666479,
+   "n_units": 161
+  },
+  "low_amplitude": {
+   "r_median": 0.980637091544856,
+   "amp_ratio_median": 0.9768460811669871,
+   "n_units": 79
+  },
+  "high_amplitude": {
+   "r_median": 0.9933048952397536,
+   "amp_ratio_median": 0.9909942510840539,
+   "n_units": 82
+  },
+  "amp_split_sigma": 10.834449576832132
+ },
+ "sorting_x": {
+  "acc_median": 0.5522755227552275,
+  "n_units": 161,
+  "n_acc_ge_0.8": 30
+ },
+ "sorting_x_hat": {
+  "acc_median": 0.6076923076923076,
+  "n_units": 161,
+  "n_acc_ge_0.8": 35
+ },
+ "sorting_y_hat_online": {
+  "acc_median": 0.6004140786749482,
+  "n_units": 161,
+  "n_acc_ge_0.8": 35,
+  "pct_unsorted": 1.2676199168441336
+ },
+ "lfp_r_median": {
+  "delta": 0.9997749849053972,
+  "theta": 0.9993750571797279,
+  "alpha": 0.9986560350219488,
+  "beta": 0.9950444462291583,
+  "gamma": 0.9909626603377536,
+  "high_gamma": 0.9891408264078263
+ },
+ "mua_r_median": 0.9946937984619841,
+ "snr_db": {
+  "lfp": 19.219496887179815,
+  "spike": 12.87905950087466
+ },
+ "artifacts": {
+  "pct_flagged": 0.2717414543999789,
+  "l1_inside": 0.7812922218193611,
+  "l1_outside": 0.06926809709805709
+ },
+ "probe_f1": 0.027163397700975003
+}

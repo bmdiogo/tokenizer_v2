@@ -1,0 +1,54 @@
+[project]
+name = "tokenizer-v2"
+version = "0.2.0"
+description = "Causal codec for 96-channel Utah-array recordings: 30 kHz -> 125 Hz tokens, two decoders."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.7",
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "neo>=0.13",
+    "nixio>=1.5",
+    "quantities>=0.15",
+    "python-dotenv>=1.0",
+    "wandb>=0.21",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+sorting = ["isosplit6>=0.1"]     # ElcheSort's clusterer; in the container, optional elsewhere
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = [
+    "E731",   # small named lambdas are used as local helpers
+    "E741",   # `l` for a cluster label, as in the sorting literature
+    "B023",   # closures over loop variables are called inside the same iteration
+    "B905",   # zip() over arrays of equal length by construction
+]
+
+[tool.ruff.lint.per-file-ignores]
+# models/ and utils/ keep to 120 columns; scripts, the app and the tests carry long
+# command lines, captions and expected values on one line
+"scripts/**" = ["E501"]
+"app/**" = ["E501"]
+"tests/**" = ["E501"]

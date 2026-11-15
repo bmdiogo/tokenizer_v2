@@ -1,0 +1,45 @@
+{
+ "split_hash": "14ea01191d7d",
+ "git": "f1684d0",
+ "question": "receptive field, burn-in and memory per arm",
+ "window": 7680,
+ "batch": 4,
+ "arms": {
+  "125 Hz": {
+   "strides": "8,5,3,2",
+   "ratio": 240,
+   "params": 12415972,
+   "receptive_field": 11352,
+   "rf_ms": 378.4,
+   "burn_in": 11520,
+   "peak_gib": 10.21961498260498
+  },
+  "62.5 Hz": {
+   "strides": "8,5,3,2,2",
+   "ratio": 480,
+   "params": 18187236,
+   "receptive_field": 12312,
+   "rf_ms": 410.4,
+   "burn_in": 12480,
+   "peak_gib": 10.730581283569336
+  },
+  "31.3 Hz": {
+   "strides": "8,5,3,2,2,2",
+   "ratio": 960,
+   "params": 23958500,
+   "receptive_field": 14712,
+   "rf_ms": 490.4,
+   "burn_in": 15360,
+   "peak_gib": 13.195710182189941
+  },
+  "15.6 Hz": {
+   "strides": "8,5,3,2,2,2,2",
+   "ratio": 1920,
+   "params": 29729764,
+   "receptive_field": 19512,
+   "rf_ms": 650.4,
+   "burn_in": 21120,
+   "peak_gib": 18.206274032592773
+  }
+ }
+}

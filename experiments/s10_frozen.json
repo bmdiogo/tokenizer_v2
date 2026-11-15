@@ -1,0 +1,12 @@
+{
+ "note": "S9 selection, fixed before any test number is seen: one configuration per rate (s5-c8 settings, LR 1x), checkpoint step 200000 (EMA), all 5 seeds. Chosen on p2_late / p3_late only (s9.json).",
+ "split_hash": "8159c355670a",
+ "checkpoint": "step_200000.pt",
+ "rates": {
+  "125 Hz": ["s8-ref-s1", "s8-ref-s2", "s8-ref-s3", "s8-ref-s4", "s8-ref-s5"],
+  "62.5 Hz": ["s8-s6-625hz-lr1-s1", "s8-s6-625hz-lr1-s2", "s8-s6-625hz-lr1-s3", "s8-s6-625hz-lr1-s4", "s8-s6-625hz-lr1-s5"],
+  "31.3 Hz": ["s8-s6-313hz-lr1-s1", "s8-s6-313hz-lr1-s2", "s8-s6-313hz-lr1-s3", "s8-s6-313hz-lr1-s4", "s8-s6-313hz-lr1-s5"]
+ },
+ "baselines": "identity (ceiling), PCA and low-rate at the same frame / K as each rate (T5)",
+ "test_groups": ["p2_final", "p3_final", "p4_unseen"]
+}

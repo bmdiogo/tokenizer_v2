@@ -1,0 +1,16 @@
+# The build context is this directory, and build_image.sh drops the exported
+# image archive here — without this file every `docker build` would upload
+# ~3.7 GB of previous output to the daemon before doing anything.
+#
+# Only the Dockerfile and the dependency lock are actually needed to build.
+*.tar
+*.tar.gz
+*.sif
+*.sha256
+
+# Scripts and docs are not COPYed into the image.
+*.sh
+*.slurm
+*.md
+image.env
+requirements.in

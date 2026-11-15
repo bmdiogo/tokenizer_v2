@@ -1,0 +1,8 @@
+patient,split,group,recordings,days
+P2,test,p2_final,13,11
+P2,train,,50,30
+P2,val,p2_late,11,7
+P3,test,p3_final,18,10
+P3,train,,52,29
+P3,val,p3_late,11,6
+P4,test,p4_unseen,20,11

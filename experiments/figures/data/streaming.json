@@ -1,0 +1,40 @@
+{
+ "git": "9919bea",
+ "split_hash": "14ea01191d7d",
+ "quick": false,
+ "session": "P4-test-44",
+ "torch_threads": 20,
+ "rates": {
+  "125": {
+   "frame_samples": 240,
+   "budget_ms": 8.0,
+   "stream_vs_offline_max_abs": 0.004270076751708984,
+   "t0": 3800,
+   "first_changed_sample": 3600,
+   "lookback_samples": 200,
+   "frame_start_of_t0": 3600,
+   "max_abs_before_frame": 0.0
+  },
+  "62.5": {
+   "frame_samples": 480,
+   "budget_ms": 16.0,
+   "stream_vs_offline_max_abs": 0.003850221633911133,
+   "t0": 3760,
+   "first_changed_sample": 3360,
+   "lookback_samples": 400,
+   "frame_start_of_t0": 3360,
+   "max_abs_before_frame": 0.0
+  },
+  "31.3": {
+   "frame_samples": 960,
+   "budget_ms": 32.0,
+   "stream_vs_offline_max_abs": 0.010308325290679932,
+   "t0": 3680,
+   "first_changed_sample": 2880,
+   "lookback_samples": 800,
+   "frame_start_of_t0": 2880,
+   "max_abs_before_frame": 0.0
+  }
+ },
+ "gpu": "NVIDIA H100"
+}

@@ -1,0 +1,26 @@
+{
+ "split_hash": "14ea01191d7d",
+ "git": "ec8e498",
+ "question": "causal and streamable",
+ "tests_passed": true,
+ "tests_tail": [
+  "6 passed in 0.89s"
+ ],
+ "params": {
+  "encoder": 4497696,
+  "reconstruction_decoder": 3959138,
+  "spike_decoder": 3959138
+ },
+ "time_per_frame_ms": {
+  "cpu": {
+   "p50_ms": 32.26511715911329,
+   "p99_ms": 35.37172106560319,
+   "budget_ms": 8.0
+  },
+  "cuda": {
+   "p50_ms": 5.512363975867629,
+   "p99_ms": 5.687339324504137,
+   "budget_ms": 8.0
+  }
+ }
+}
