@@ -15,7 +15,7 @@ This repository holds the code, the evaluation protocol and the results of the b
 (TFG) behind the model. The claim is **temporal compression only** (240 samples → 1 token per
 electrode). Nothing here claims a bitrate or a byte count.
 
-![The codec](experiments/figures/Fig1_codec.png)
+![The codec: a causal encoder on the implant streams 125 Hz tokens; the receiver decodes the whole recording (x̂) and the spikes only (ŷ)](experiments/figures/Fig1_overview.png)
 
 ## Results (test set, evaluated once)
 
