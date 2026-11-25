@@ -86,7 +86,7 @@ depend on electrode position and transfers to a new array.
 - **Decoders**: two mirrored stacks (transposed convs, 1.5× wider). One is trained on the recording
   (x̂), the other on the spike target (ŷ).
 - **Causality**: every conv is weight-normed and padded on the left only. The receptive field is
-  11 280 samples (376 ms). `Codec.stream` keeps each layer's history, so a stream of 8 ms frames
+  11 352 samples (378 ms, measured in pre-flight test T2). `Codec.stream` keeps each layer's history, so a stream of 8 ms frames
   reproduces the offline output. Training burns in on 11 520 samples (no gradient) before the
   loss span, so training sees what streaming sees. `CAUSAL=0` builds the non-causal ceiling.
 - 12.4 M parameters, ELU activations, bf16 autocast, AdamW, weight EMA 0.999.
